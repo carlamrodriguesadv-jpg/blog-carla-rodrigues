@@ -1,0 +1,54 @@
+# Project TODO
+
+- [x] Inicializar projeto full-stack com autenticação, banco de dados e servidor
+- [x] Validar diretrizes de publicidade jurídica aplicáveis aos textos institucionais e CTAs
+- [x] Definir arquitetura editorial pública e fluxo administrativo
+- [x] Modelar artigos, categorias, autoria, imagens de capa e estados editoriais no banco de dados
+- [x] Criar e aplicar migração de banco de dados
+- [x] Implementar consultas públicas de artigos publicados, busca e filtros por categoria
+- [x] Implementar leitura individual de artigos por slug com metadados editoriais
+- [x] Implementar procedimentos administrativos protegidos para criar, editar, revisar e publicar conteúdo
+- [x] Implementar upload persistente de imagens de capa em armazenamento de objetos
+- [x] Criar página inicial editorial responsiva com quatro dobras e acesso ao site principal
+- [x] Criar cabeçalho, navegação móvel, rodapé institucional e botão flutuante de WhatsApp
+- [x] Criar página de listagem de artigos com busca, categorias e paginação
+- [x] Criar página de artigo com compartilhamento de link e aviso informativo
+- [x] Criar apresentação profissional da Dra. Carla Rodrigues sem gerar variações de sua fotografia
+- [x] Criar área administrativa autenticada com visão geral do fluxo editorial
+- [x] Criar editor de artigos com campos de SEO, categoria, autoria, status e programação
+- [x] Implementar gestão de categorias
+- [x] Implementar geração assistida de sugestões e rascunhos por IA no servidor
+- [x] Garantir revisão humana obrigatória antes da publicação de qualquer conteúdo gerado por IA
+- [x] Implementar rotinas e lembretes recorrentes para revisão de rascunhos e publicação programada
+- [x] Aplicar identidade visual definida com Cormorant Garamond, Inter e paleta institucional
+- [x] Aplicar acessibilidade, navegação por teclado, estados de foco e contraste adequado
+- [x] Configurar metadados básicos, robots.txt e estrutura de URLs amigável
+- [x] Escrever e atualizar testes Vitest para regras de publicação, permissões e rotinas
+- [x] Executar verificação de tipos, testes e build de produção
+- [x] Verificar visualmente as páginas públicas e administrativas em desktop e celular
+- [x] Revisar todos os itens do TODO antes do checkpoint final
+- [x] Criar checkpoint final e entregar a versão publicável ao usuário
+- [x] Auditar programaticamente o contraste da paleta e corrigir combinações abaixo do nível AA
+- [x] Validar foco visível, ordem de navegação e rótulos de controles interativos nas rotas principais
+- [x] Converter a aplicação para execução exclusivamente estática, sem banco, servidor de aplicação, autenticação, IA ou rotinas internas
+- [x] Criar arquivo local de dados com artigos, categorias e instruções simples de atualização manual
+- [x] Adaptar a página inicial para listar artigos diretamente do arquivo local
+- [x] Adaptar a página individual para localizar artigos por slug no arquivo local
+- [x] Manter header, footer, site institucional, WhatsApp flutuante e fotografia original
+- [x] Remover rotas e elementos da antiga área administrativa
+- [x] Ajustar configuração e scripts para gerar hospedagem estática portável
+- [x] Atualizar testes para a nova arquitetura sem backend
+- [x] Validar páginas estáticas em desktop e celular
+- [x] Criar novo checkpoint da versão estática e entregar ao usuário
+- [x] Remover o servidor Express e sua dependência do fluxo principal de build e execução
+- [x] Definir `dist/public` como artefato principal de entrega para hospedagens estáticas
+- [x] Corrigir o build gerenciado para gerar o arquivo de entrada obrigatório `dist/index.js`
+- [x] Criar wrapper mínimo que sirva apenas os arquivos de `dist/public` e respeite `process.env.PORT`
+- [x] Preservar a versão exportável para Vercel, Netlify e GitHub Pages sem API ou banco de dados
+- [x] Simular o comando de produção e confirmar resposta HTTP nas rotas principal, artigos, artigo individual e Sobre
+- [x] Executar tipagem, testes e build após a correção de implantação
+- [x] Criar e entregar novo checkpoint com a correção validada
+- [x] Reposicionar o cartão editorial sobre a fotografia para não cobrir o nome da Dra. Carla
+- [x] Verificar a composição corrigida da fotografia em desktop e celular
+- [x] Verificar as configurações de Vercel, Netlify e GitHub Pages após a correção de implantação
+- [x] Documentar os limites de caminho base para hospedagens estáticas externas
