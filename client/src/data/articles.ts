@@ -1,6 +1,6 @@
 import type { Article } from "./articles";
 
-// Gerado automaticamente em 09/09/2026 12:42
+// Gerado automaticamente em 10/09/2026 08:01
 // Curadoria diária de direito criminal — Dra. Carla Rodrigues
 
 export const articles: Article[] = [
@@ -9,7 +9,7 @@ export const articles: Article[] = [
     title: "Firmadas após 2ª guerra, bases do Direito Penal Internacional estão em xeque",
     slug: "firmadas-apos-2-guerra-bases-do-direito-penal-internacional-",
     excerpt: "Informação jurídica sobre firmadas após 2ª guerra, bases do direito penal internaciona... Conteúdo informativo pela Dra. Carla Rodrigues.",
-    publishedAt: "2026-09-09T12:42:47.000Z",
+    publishedAt: "2026-09-10T08:01:36.000Z",
     authorName: "Dra. Carla Rodrigues",
     categoryName: "Defesa Criminal",
     categorySlug: "defesa-criminal",
