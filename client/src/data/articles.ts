@@ -73,23 +73,32 @@ A Constituição Federal estabelece que "ninguém será considerado culpado até
 - Ela só será considerada culpada quando não couber mais recurso contra a condenação
 - Até lá, todas as garantias processuais devem ser respeitadas
 
-### E quando a presunção é desrespeitada?
-
-Infelizmente, há situações em que esse princípio é violado:
-
-- Prisões preventivas sem fundamentação adequada
-- Vazamentos seletivos de informações sobre investigações
-- Exposição pública de pessoas que ainda estão sendo investigadas
-- Tratamento degradante durante abordagens policiais ou audiências de custódia
-
-Nesses casos, a defesa técnica pode atuar para garantir o respeito aos direitos fundamentais, seja por meio de habeas corpus, pedidos de relaxamento de prisão ou outras medidas cabíveis.
-
 ### Conclusão
 
 A presunção de inocência não é um "benefício" dado ao acusado — é um **direito fundamental** que protege toda a sociedade. Ela garante que ninguém seja condenado sem provas, sem defesa e sem um julgamento justo.
 
 Informar-se sobre esse e outros direitos é o primeiro passo para exercer a cidadania plena. Este conteúdo tem caráter exclusivamente informativo e não substitui orientação jurídica individualizada.
 
-> *"É melhor absolver dez culpados do que condenar um inocente."* — Frase atribuída a diversos juristas ao longo da história.`
+> *"É melhor absolver dez culpados do que condenar um inocente."*`
   }
+];
+
+export function getArticleBySlug(slug: string) {
+  return articles.find(article => article.slug === slug);
+}
+
+export function filterArticles(query: string = "", category: string = "") {
+  const normalized = query.trim().toLocaleLowerCase("pt-BR");
+  return articles.filter(article => {
+    const categoryMatches = !category || article.categorySlug === category;
+    const searchable = [article.title, article.excerpt, article.content, article.categoryName, ...article.tags].join(" ").toLocaleLowerCase("pt-BR");
+    return categoryMatches && (!normalized || searchable.includes(normalized));
+  });
+}
+
+export const categories = [
+  { id: 1, name: "Defesa Criminal", slug: "defesa-criminal", description: "Garantias, procedimentos e direitos fundamentais no processo penal.", color: "#2D5A5A" },
+  { id: 2, name: "Direitos Fundamentais", slug: "direitos-fundamentais", description: "Presunção de inocência, direito ao silêncio e devido processo legal.", color: "#C9822B" },
+  { id: 3, name: "Audiência de Custódia", slug: "audiencia-de-custodia", description: "Finalidade, etapas e direitos relacionados à apresentação judicial.", color: "#2D5A5A" },
+  { id: 4, name: "Habeas Corpus", slug: "habeas-corpus", description: "Informação sobre a proteção da liberdade de locomoção.", color: "#C9822B" },
 ];
